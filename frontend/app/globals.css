@@ -1,0 +1,66 @@
+/* Mantine core */
+@import "@mantine/core/styles.css";
+
+/* Add @layer to Tailwind Base to prevent Preflight conflicts */
+@layer {
+  @tailwind base;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-indigo-400;
+  }
+}
+
+.mantine-Tabs-tab[data-active="true"] {
+  background-color: #6366f150;
+  font-weight: bold;
+}
+
+.mantine-Input-input {
+  background-color: #00000050;
+  border-color: transparent;
+}
+
+.mantine-Select-dropdown {
+  background-color: #0e101f;
+  border-color: transparent;
+}
+
+.mantine-Select-option:hover {
+  background-color: #6366f180;
+}
+
+.mantine-Select-option svg {
+  color: #a5b4fc;
+}
+
+.mantine-Tabs-tabLabel {
+  padding: 10px 15px;
+  color: white;
+}
+
+.mantine-Tabs-list::before {
+  border-color: #6366f150;
+}
+
+.mantine-Code-root {
+  background-color: transparent;
+  padding: 0px;
+}
+
+.mantine-PillsInput-input {
+  background-color: #00000030;
+  border-color: #00000030;
+  border-radius: 0.5rem;
+  font-size: 14px;
+}
+
+.mantine-Pill-root {
+  /* background-color: #6366F170; */
+  color: white;
+  font-weight: bold;
+}
